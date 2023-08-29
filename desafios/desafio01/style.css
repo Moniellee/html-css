@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: bold;
+    src: url('fontes/bold.ttf') format('truetype');
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+body {
+    background-color: #cfe1b9;
+    
+}
+
+header {
+    background-image: linear-gradient(to bottom, #1b4332, #40916c);
+    padding: 10px 10px 10px 10px;
+    margin: -9px -12px -1px -14px;
+}
+
+header > h1 {
+    color: #ffffffb7;
+    text-align: center;
+    font-family: 'bold', Helvetica, sans-serif;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffffb7;
+    text-align: center;
+}
+
+header >ul {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px -15px -19px;
+}
+
+header > ul > li{
+    display: inline-block;
+}
+
+header > ul > li > a {
+    color: #ffffffb7;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 1px 10px 0px;
+}
+
+main {
+    background-color: white;
+    margin: 1px 27px 10px 27px;
+    padding: 5px 23px 10px 23px;
+    text-align: justify;
+}
+main > h1 {
+    color: #1b4332;
+    font-family: 'idroid', Helvetica, sans-serif;
+    font-size: 160%;
+}
+
+main > h2 {
+    color: #1b4332;
+    font-family: 'idroid', Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #a9cabc, white);
+    border-radius: 5px;
+}
+main > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10%;
+}
+
+main > picture {
+    display: block;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 0px;
+}
+
+main > iframe { 
+    display: block;
+    text-align: center;
+    padding: auto;
+    margin:auto;
+}
+main > footer {
+    background-color: #cfe1b9;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+}
+main > footer > h1 {
+    background-color: #40916c;   
+}
+
+main > footer > p {
+    background-color: #cfe1b9;
+    padding: 10px 10px 10px 10px;
+}
+
+main > footer > nav {
+    display: block;
+}
+
+main > footer > nav > ul {
+    display: inline-block;
+    padding: 10px 33px 10px 46px;
+    font-weight: bold;
+}
+
+div.final {
+  background-color: #1b4332;  
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
