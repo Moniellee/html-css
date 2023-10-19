@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,20 +20,37 @@
             padding: 10px;
         }
 
-        thead, tfoot {
-            background-color: #adb5bd;
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #253237;
+            color: #dcdcdd;
         }
 
+        thead, tfoot {
+            background-color: #5c6b73;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #5c6b73;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: #9db4c0;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1> 
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop</th>
             </tr>
         </thead>
         <tbody>
@@ -174,7 +192,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <strong>
                     <td>210,147.125</td>
                 </strong>
@@ -182,5 +200,11 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quaerat voluptas corporis quidem assumenda cum soluta dolorum! Repellat nulla consectetur quia, nostrum eligendi quas libero deserunt rerum laudantium recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit optio quibusdam, nostrum harum, minima perspiciatis ducimus unde alias neque blanditiis quisquam voluptates nemo a rem hic nisi quasi culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem harum eligendi esse perspiciatis porro recusandae possimus laudantium expedita veritatis quae odio perferendis commodi vero quo ullam, repudiandae saepe accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores odio nostrum reiciendis at illo in non quaerat asperiores, ipsa quisquam, autem quasi voluptatum! Earum soluta nulla voluptatem esse architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quaerat voluptas corporis quidem assumenda cum soluta dolorum! Repellat nulla consectetur quia, nostrum eligendi quas libero deserunt rerum laudantium recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit optio quibusdam, nostrum harum, minima perspiciatis ducimus unde alias neque blanditiis quisquam voluptates nemo a rem hic nisi quasi culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem harum eligendi esse perspiciatis porro recusandae possimus laudantium expedita veritatis quae odio perferendis commodi vero quo ullam, repudiandae saepe accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores odio nostrum reiciendis at illo in non quaerat asperiores, ipsa quisquam, autem quasi voluptatum! Earum soluta nulla voluptatem esse architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quaerat voluptas corporis quidem assumenda cum soluta dolorum! Repellat nulla consectetur quia, nostrum eligendi quas libero deserunt rerum laudantium recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit optio quibusdam, nostrum harum, minima perspiciatis ducimus unde alias neque blanditiis quisquam voluptates nemo a rem hic nisi quasi culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem harum eligendi esse perspiciatis porro recusandae possimus laudantium expedita veritatis quae odio perferendis commodi vero quo ullam, repudiandae saepe accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores odio nostrum reiciendis at illo in non quaerat asperiores, ipsa quisquam, autem quasi voluptatum! Earum soluta nulla voluptatem esse architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quaerat voluptas corporis quidem assumenda cum soluta dolorum! Repellat nulla consectetur quia, nostrum eligendi quas libero deserunt rerum laudantium recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit optio quibusdam, nostrum harum, minima perspiciatis ducimus unde alias neque blanditiis quisquam voluptates nemo a rem hic nisi quasi culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem harum eligendi esse perspiciatis porro recusandae possimus laudantium expedita veritatis quae odio perferendis commodi vero quo ullam, repudiandae saepe accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores odio nostrum reiciendis at illo in non quaerat asperiores, ipsa quisquam, autem quasi voluptatum! Earum soluta nulla voluptatem esse architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quaerat voluptas corporis quidem assumenda cum soluta dolorum! Repellat nulla consectetur quia, nostrum eligendi quas libero deserunt rerum laudantium recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit optio quibusdam, nostrum harum, minima perspiciatis ducimus unde alias neque blanditiis quisquam voluptates nemo a rem hic nisi quasi culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem harum eligendi esse perspiciatis porro recusandae possimus laudantium expedita veritatis quae odio perferendis commodi vero quo ullam, repudiandae saepe accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores odio nostrum reiciendis at illo in non quaerat asperiores, ipsa quisquam, autem quasi voluptatum! Earum soluta nulla voluptatem esse architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quaerat voluptas corporis quidem assumenda cum soluta dolorum! Repellat nulla consectetur quia, nostrum eligendi quas libero deserunt rerum laudantium recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit optio quibusdam, nostrum harum, minima perspiciatis ducimus unde alias neque blanditiis quisquam voluptates nemo a rem hic nisi quasi culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem harum eligendi esse perspiciatis porro recusandae possimus laudantium expedita veritatis quae odio perferendis commodi vero quo ullam, repudiandae saepe accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores odio nostrum reiciendis at illo in non quaerat asperiores, ipsa quisquam, autem quasi voluptatum! Earum soluta nulla voluptatem esse architecto.</p>
 </body>
 </html>
